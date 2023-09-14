@@ -38,8 +38,8 @@ coordinator:
   # CPU & Memory
   # Memory allocated to each coordinator, expressed in MB.
   # CPU allocated to each coordinator, expressed in CPU cores.
-  cpu: 10
-  memory: 100000
+  cpu: 5
+  memory: 50000
 
   # This count is used for slave coordinators only.
   # The total number of coordinators will always be count + 1.
@@ -144,8 +144,8 @@ executor:
   # CPU & Memory
   # Memory allocated to each executor, expressed in MB.
   # CPU allocated to each executor, expressed in CPU cores.
-  cpu: 10
-  memory: 100000
+  cpu: 5
+  memory: 50000
 
   # Engines
   # Engine names be 47 characters or less and be lowercase alphanumber characters or '-'.
