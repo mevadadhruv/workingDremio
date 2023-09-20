@@ -1,0 +1,6 @@
+last name of release :- dremio8
+helm install dremio8 dremio_v2
+helm uninstall dremio7
+cmd to get last :- helm list --all-namespaces
+to delete 
+kubectl delete pvc datadir-zk-0 datadir-zk-1 dremio-default-executor-c3-0-dremio-executor-0 dremio-default-executor-c3-0-dremio-executor-1 dremio-default-executor-volume-dremio-executor-0 dremio-default-executor-volume-dremio-executor-1 dremio-master-volume-dremio-master-0

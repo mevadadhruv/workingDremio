@@ -38,8 +38,10 @@ coordinator:
   # CPU & Memory
   # Memory allocated to each coordinator, expressed in MB.
   # CPU allocated to each coordinator, expressed in CPU cores.
-  cpu: 5
-  memory: 50000
+  # cpu: 5
+  # memory: 50000
+  cpu: 3
+  memory: 30000
 
   # This count is used for slave coordinators only.
   # The total number of coordinators will always be count + 1.
@@ -144,17 +146,20 @@ executor:
   # CPU & Memory
   # Memory allocated to each executor, expressed in MB.
   # CPU allocated to each executor, expressed in CPU cores.
-  cpu: 5
-  memory: 50000
+  # cpu: 5
+  # memory: 50000
+
+  cpu: 1
+  memory: 20000
 
   # Engines
   # Engine names be 47 characters or less and be lowercase alphanumber characters or '-'.
   # Note: The number of executor pods will be the length of the array below * count.
   engines: ['default']
-  count: 2
+  count: 6
 
   # Executor volume size.
-  volumeSize: 128Gi
+  volumeSize: 20Gi
 
   # Kubernetes Service Account
   # Uncomment below to use a custom Kubernetes service account for executors.
@@ -200,7 +205,7 @@ executor:
     #   size: 100Gi
     #   storageClass: "local-nvme"
     volumes:
-      - size: 100Gi
+      - size: 10Gi
 
   # These values, when defined and not empty, override the provided shared annotations, labels, node selectors, or tolerations.
   # Uncomment only if you are trying to override the chart's shared values.
