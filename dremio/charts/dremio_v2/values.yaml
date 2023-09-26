@@ -40,8 +40,8 @@ coordinator:
   # CPU allocated to each coordinator, expressed in CPU cores.
   # cpu: 5
   # memory: 50000
-  cpu: 3
-  memory: 30000
+  cpu: 5
+  memory: 50000
 
   # This count is used for slave coordinators only.
   # The total number of coordinators will always be count + 1.
@@ -149,17 +149,17 @@ executor:
   # cpu: 5
   # memory: 50000
 
-  cpu: 1
-  memory: 20000
+  cpu: 5
+  memory: 50000
 
   # Engines
   # Engine names be 47 characters or less and be lowercase alphanumber characters or '-'.
   # Note: The number of executor pods will be the length of the array below * count.
   engines: ['default']
-  count: 6
+  count: 2
 
   # Executor volume size.
-  volumeSize: 20Gi
+  volumeSize: 60Gi
 
   # Kubernetes Service Account
   # Uncomment below to use a custom Kubernetes service account for executors.
