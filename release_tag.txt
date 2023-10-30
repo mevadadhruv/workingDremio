@@ -1,6 +1,6 @@
-last name of release :- dremio2
-helm install dremio2 dremio_v2
-helm uninstall dremio2
+last name of release :- dremio1
+helm install dremio1 dremio_v2
+helm uninstall dremio1
 cmd to get last :- helm list --all-namespaces
 to delete 
 kubectl delete pvc datadir-zk-0 datadir-zk-1 dremio-default-executor-c3-0-dremio-executor-0 dremio-default-executor-c3-0-dremio-executor-1 dremio-default-executor-volume-dremio-executor-0 dremio-default-executor-volume-dremio-executor-1 dremio-master-volume-dremio-master-0 dremio-default-executor-c3-0-dremio-executor-2 dremio-default-executor-c3-0-dremio-executor-3 dremio-default-executor-c3-0-dremio-executor-4 dremio-default-executor-c3-0-dremio-executor-5 
