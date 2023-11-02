@@ -14,7 +14,7 @@
 # automatically during redeployments and may negatively impact
 # the cluster.
 image: europe-west1-docker.pkg.dev/prj-asl-shared-gedms-prod/dremiotest1/dhruvmeevada1234/dremio
-imageTag: '1'
+imageTag: '1.2-asl'
 
 # Annotations, labels, node selectors, and tolerations
 #
