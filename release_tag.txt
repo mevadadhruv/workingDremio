@@ -1,5 +1,5 @@
-last name of release :- dremio2
-helm install dremio2 dremio_v2
+last name of release :- test123
+helm install test123 dremio_v2
 helm uninstall dremio1
 cmd to get last :- helm list --all-namespaces
 to delete 
