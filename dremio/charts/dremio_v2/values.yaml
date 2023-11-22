@@ -13,8 +13,12 @@
 # will potentially cause Dremio to upgrade versions
 # automatically during redeployments and may negatively impact
 # the cluster.
-image: europe-west1-docker.pkg.dev/prj-asl-shared-gedms-prod/dremiotest1/dhruvmeevada1234/dremio
-imageTag: '11'
+# for asl account
+# image: europe-west1-docker.pkg.dev/prj-asl-shared-gedms-prod/dremiotest1/dhruvmeevada1234/dremio
+# imageTag: '11'
+
+image: europe-west1-docker.pkg.dev/clus-demo/dremio/dremio-oss
+imageTag: '1'
 
 # Annotations, labels, node selectors, and tolerations
 #
