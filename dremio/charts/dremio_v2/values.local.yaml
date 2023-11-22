@@ -109,7 +109,7 @@ coordinator:
       # true and provide the appropriate Kubernetes TLS secret. Client
       # endpoint encryption is available only on Dremio Enterprise
       # Edition and should not be enabled otherwise.
-      enabled: false
+      enabled: true
 
       # To create a TLS secret, use the following command:
       # kubectl create secret tls ${TLS_SECRET_NAME} --key ${KEY_FILE} --cert ${CERT_FILE}
@@ -121,7 +121,7 @@ coordinator:
     tls:
       # To enable TLS for the Flight endpoints, set the enabled flag to
       # true and provide the appropriate Kubernetes TLS secret.
-      enabled: false
+      enabled: true
 
       # To create a TLS secret, use the following command:
       # kubectl create secret tls ${TLS_SECRET_NAME} --key ${KEY_FILE} --cert ${CERT_FILE}
