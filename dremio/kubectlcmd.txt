@@ -4,11 +4,15 @@ kubectl get pv
 
 kubectl get pvc
 
-helm install fff dremio_v2
+helm install kamal dremio_v2
+
+helm list --all-namespaces
+
+
+helm uninstall dhruvdnt
 
 kubectl delete pvc datadir-zk-0 datadir-zk-1 dremio-default-executor-c3-0-dremio-executor-0 dremio-default-executor-c3-0-dremio-executor-1 dremio-default-executor-volume-dremio-executor-0 dremio-default-executor-volume-dremio-executor-1 dremio-master-volume-dremio-master-0
 
-helm uninstall ddd
 
 kubectl describe pod dremio-executor-1
 kubectl describe pod dremio-master-0
